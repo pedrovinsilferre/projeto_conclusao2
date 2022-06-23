@@ -1,59 +1,53 @@
-body{
-   
+body {
+    width: 100vw;
+    height: 100vh;
 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-image: url(ezgif.com-gif-maker\ \(1\).gif);
 }
+
 
 
 .login {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: solid 2px black;  
     border-radius: 10px;
-    color: black;
-   
+    color: white;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.9);
+
+
 }
 
-h1{
+h1 {
     justify-content: center;
     align-items: center;
     display: flex;
-    
-}
-.area{   
-    display: flex;  
-    justify-content: center;
-    align-items: center;
+
 }
 
-.label{
+
+.label {
     padding: 8px;
     letter-spacing: 2px;
-    text-align: left;
-  
-  
-}
-#botaoLogin{
-   margin-top: 10px;
-   margin-left: 75px;
-    
- 
+
 }
 
-.input{
+#botaoLogin {
+    margin-top: 10px;
+    margin-left: 65px;
+
+}
+
+.input {
     letter-spacing: 2px;
     border: none;
     border-bottom: 1px solid white;
     outline: none;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
-    
-    
+
 }
-
-
-
-
