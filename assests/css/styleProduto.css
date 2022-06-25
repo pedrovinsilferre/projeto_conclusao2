@@ -1,7 +1,9 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(-90deg, #540CF0, #8E16F7, #AB19E0, #e23aee, #df7ec5);
+    background-image: linear-gradient(-90deg, #330066, #5400A8, #7300E6, #7A00F5, #330066);
+
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .inNav-hover:hover{
@@ -9,5 +11,8 @@ body{
     transform: scale(1.2);
 }
 
+.inNavProduct-hover:hover{
+    text-decoration: underline;
+}
 
 
