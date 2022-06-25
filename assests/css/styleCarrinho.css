@@ -2,6 +2,57 @@
   margin: 0px;
   padding: 0px;
 }
-h1{
-    text-align: center;
+.produtos{
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: linear-gradient(
+    -90deg,
+    #540cf0,
+    #8e16f7,
+    #ab19e0,
+    #e23aee,
+    #df7ec5
+  ); */
+}
+section {
+  display: flex;
+  width: 75vw;
+  height: 30vh;
+  border-bottom: solid 1px lightgray;
+  border-top: solid 1px lightgray;
+}
+#botoes{
+  position: relative;
+}
+h3{
+display: inline;
+}
+.img{
+  display: flex;
+  
+}
+
+.inNav-hover:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+h2{
+  display: flex;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+}
+  
+
