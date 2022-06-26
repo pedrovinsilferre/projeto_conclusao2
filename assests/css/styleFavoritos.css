@@ -1,0 +1,57 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #66b81b, #5400A8, #5fa795, #403847, #477a38);
+
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.inNav-hover:hover{
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+.inNavProduct-hover:hover{
+    text-decoration: underline;
+}
+
+  /*deixa o elemento carrinho centralizado */
+  #area_favoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 30ch;
+  }
+  /* referente a como o produto estára na aba carrinho */
+  #favoritos {
+    background-color: rgba(236, 176, 176, 0.61);
+    border-radius: 15px;
+    border-bottom: solid 1px lightgray;
+    border-top: solid 1px lightgray;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.418);
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+    align-items: center; 
+  }
+  .produtos:hover {
+    transform: scale(1.01);
+    transition: 500ms ease-in-out;
+  }
+  
+  /* modificação da imagem dentro do produto */
+  img{
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  
+  #H2H3{
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+  }
