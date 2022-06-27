@@ -32,4 +32,12 @@ body{
     border: 1px solid #5400A8;
 }
 
+.cardsHeight{
+    height: 200px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out
+}
+
 

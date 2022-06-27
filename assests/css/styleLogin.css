@@ -1,6 +1,123 @@
 body {
     width: 100vw;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-image: url(bg.gif);
+}
+
+.login {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#botaoLogin {
+    margin-top: 5px;
+    font-size: 17px;
+    width: 250px;
+    height: 35px;
+}
+
+.input {
+    letter-spacing: 2px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    display: flex;
+    width: 250px;
+    height: 35px;
+}
+
+.divInput {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.botaoFacebook {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    background-image:none;
+}
+
+.botaoGoogle {
+    padding: 5px;
+    padding-right: 22px;
+    color: white;
+    background-color: #1166e5;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.botaoApple {
+    padding-right: 30px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+}
+
+img {
+    margin-right: 5px;
+}
+
+#imgApple {
+    margin-left: -25px;
+}
+
+p {
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+#botaoLogin:hover {
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+/* body {
+    width: 100vw;
+    height: 100vh;
 
     justify-content: center;
     align-items: center;
@@ -36,4 +153,4 @@ h1 {
     outline: none;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-}
+} */
