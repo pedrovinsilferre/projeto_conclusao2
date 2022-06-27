@@ -1,58 +1,62 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-.produtos{
-  width: 100vw;
-  height: 100vh;
-  flex-wrap: wrap;
-}
+/* referente a mudança de cor do fundo da página */
 body {
   width: 100vw;
   height: 100vh;
-  /* background-image: linear-gradient(
-    -90deg,
-    #540cf0,
-    #8e16f7,
-    #ab19e0,
-    #e23aee,
-    #df7ec5
-  ); */
-}
-section {
-  display: flex;
-  width: 75vw;
-  height: 30vh;
-  border-bottom: solid 1px lightgray;
-  border-top: solid 1px lightgray;
-}
-#botoes{
-  position: relative;
-}
-h3{
-display: inline;
-}
-.img{
-  display: flex;
-  
-}
+  background-image: linear-gradient(
+    -90deg, #330066, #5400A8, #7300E6, #7A00F5, #330066
+  );
 
+  font-family: "Rajdhani", sans-serif;
+  display
+
+  /* position: absolute;  */
+}
+   
 .inNav-hover:hover {
   transition: all 0.3s;
   transform: scale(1.1);
-}
+}  
 
-.area {
+  /*deixa o elemento carrinho centralizado */
+#area_carrinho {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  height: 40ch;
+  width: 100%;
 }
-h2{
+/* referente a como o produto estára na aba carrinho */
+#produtos {
+  background-color: rgba(176, 207, 236, 0.61);
+  border-radius: 15px;
+  border-bottom: solid 1px lightgray;
+  border-top: solid 1px lightgray;
+  box-shadow: -10px 10px rgba(0, 0, 0, 0.418);
   display: flex;
-  position: relative;
-  justify-content: end;
-  align-items: center;
+  width: 70%;
+  height: 100%;
+  flex-wrap: wrap;   
+  justify-content: space-around;
+  align-items: center; 
 }
-  
+.produtos:hover {
+  transform: scale(1.01);
+  transition: 500ms ease-in-out;
+}
 
+/* modificação da imagem dentro do produto */
+#imgProduto{
+  display: flex;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+#H2H3{
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+}
