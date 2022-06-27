@@ -40,3 +40,4 @@ function remover(str) {
   }
   add_fav();
 }
+
