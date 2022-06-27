@@ -21,4 +21,15 @@ body{
     font-weight: 500;
 }
 
+.btnAddCarrinho{
+    background-color: #7A00F5;
+    color: white;
+}
+
+.btnAddCarrinho:hover{
+    background-color: #5400A8;
+    color: white;
+    border: 1px solid #5400A8;
+}
+
 
