@@ -1,6 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
     background-image: linear-gradient(-90deg, #330066, #5400A8, #7300E6, #7A00F5, #330066);
 
     font-family: 'Rajdhani', sans-serif;
@@ -13,6 +14,11 @@ body{
 
 .inNavProduct-hover:hover{
     text-decoration: underline;
+}
+
+.textNavProduct{
+    color: #330066;
+    font-weight: 500;
 }
 
 
