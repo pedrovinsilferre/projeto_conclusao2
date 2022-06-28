@@ -1,62 +1,41 @@
-/* referente a mudança de cor do fundo da página */
-body {
+body{
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(
-    -90deg, #330066, #5400A8, #7300E6, #7A00F5, #330066
-  );
+  /* overflow-x: hidden; */
+  background-image: linear-gradient(-90deg, #330066, #5400A8, #7300E6, #7A00F5, #330066);
 
-  font-family: "Rajdhani", sans-serif;
-  display
-
-  /* position: absolute;  */
+  font-family: 'Rajdhani', sans-serif;
 }
-   
-.inNav-hover:hover {
-  transition: all 0.3s;
+
+main{
+  width: 100vw;
+}
+
+#tabelaIcons{
+  position: relative;
+}
+
+.linksParaFav:hover{
+  cursor: pointer;
   transform: scale(1.1);
-}  
-
-  /*deixa o elemento carrinho centralizado */
-#area_carrinho {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  height: 40ch;
-  width: 100%;
-}
-/* referente a como o produto estára na aba carrinho */
-#produtos {
-  background-color: rgba(176, 207, 236, 0.61);
-  border-radius: 15px;
-  border-bottom: solid 1px lightgray;
-  border-top: solid 1px lightgray;
-  box-shadow: -10px 10px rgba(0, 0, 0, 0.418);
-  display: flex;
-  width: 70%;
-  height: 100%;
-  flex-wrap: wrap;   
-  justify-content: space-around;
-  align-items: center; 
-}
-.produtos:hover {
-  transform: scale(1.01);
-  transition: 500ms ease-in-out;
+  transition: all
 }
 
-/* modificação da imagem dentro do produto */
-#imgProduto{
-  display: flex;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
+.linkParaLixeira:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all
 }
 
-
-#H2H3{
-  display: flex;
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: row; */
+.number-wrapper{
+    position: relative;
 }
+  
+.number-wrapper input {
+    padding:5px;
+    margin: 0 0 0 5px;
+    width:40px;
+    height: 80%;
+    /* border:1px solid #330066;   */
+    border: none;
+  }
