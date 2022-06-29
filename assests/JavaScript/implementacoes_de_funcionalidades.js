@@ -16,14 +16,14 @@ function logar() {
 function add_fav(){
     let btn = document.querySelector('#fav_product');
     let template = document.querySelector('#modelo_favoritos');
-    let ul = document.querySelector('#listaFavoritos')
+    let ul = document.querySelector('#listaFavoritos');
 
-    btn.addEventListener('click', e =>{
+     btn.onclick = function(){
+      lista_fav.push(template.value);
 
-        ul.append(template.content.cloneNode(true));
-
-    })   
+     }
 }
+console.log(lista_fav)
 //add a aba de carrinho
 
 //função de excluir
