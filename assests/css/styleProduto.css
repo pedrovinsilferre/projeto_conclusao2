@@ -10,7 +10,7 @@ body{
 main{
     width: 100vw;
     min-height: 100vh;
-  }
+}
 
 .inNav-hover:hover{
     transition: all 0.3s;
