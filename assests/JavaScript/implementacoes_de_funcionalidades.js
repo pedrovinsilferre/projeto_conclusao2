@@ -14,14 +14,7 @@ function logar() {
 
 //add a aba de favoritos
 function add_fav(){
-    let btn = document.querySelector('#fav_product');
-    let template = document.querySelector('#modelo_favoritos');
-    let ul = document.querySelector('#listaFavoritos');
 
-     btn.onclick = function(){
-      lista_fav.push(template.value);
-
-     }
 }
 console.log(lista_fav)
 //add a aba de carrinho
