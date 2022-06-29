@@ -1,7 +1,7 @@
 async function login(){
     debugger;
     const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value
+    const senha = document.getElementById("senha").value;
 
     const body = {
         email: email,
