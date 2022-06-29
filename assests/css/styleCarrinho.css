@@ -63,3 +63,9 @@ footer{
   width: 100%;
   height: 30%;
 }
+
+#calcSubtotal:hover{
+  cursor: pointer;
+  color: #330066 !important;
+  background-color: white;
+}
