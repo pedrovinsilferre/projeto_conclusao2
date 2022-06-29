@@ -16,12 +16,12 @@ async function login(){
         }
     })
 
-    const json = await resposta.json();
-    alert(json.mensagem)
-
     if (resposta.ok) {
         window.location.href = "carrinho.html";
+    }else{
+          const json = await resposta.json();
+    alert(json.mensagem)
     }
 }
 
-
+console.log(login)
