@@ -76,19 +76,19 @@
             </tbody>
 
             <tbody  class="flex-wrap">
-              <tr class="">
+              <tr class="carrinho">
                 <td id="tableContent1" class="gap align-items-center">
                   <img class="" src="assests/imagens/camiseta-the-boys-frente.webp" alt="imagem do produto" width="50px"> <p class="d-inline">Descrição Do Produto Aqui</p> 
                 </td>
                 <td>
                   <span class="number-wrapper">
-                    <input class="" type="number" name="qntProdutos" id="qntProdutos">
+                    <input class="" type="number" name="qntProdutos" id="qntProdutos" onclick="subtotal()">
                   </span>
                 </td>
-                <td class="">R$ 69,90</td>
-                <td>R$ 69,90</td>
+                <td id="preco">R$ 69,90</td>
+                <td id="td"></td>
                 <td class="">
-                  <img class="linksParaFav" href="#" src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px">
+                  <img class="linksParaFav" href="favoritos.html" src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px">
                 </td>
                 <td id="tabelaIcons" class="">
                   <img class="linkParaLixeira" src="assests/imagens/lixeira-aberta.png" alt="lixeira aberta" width="30px">
@@ -124,7 +124,7 @@
       </div>
     </footer>
 
-    <script src="assests/JavaScript/script_de_funcionalidade.js"></script>
+    <script src="assests/JavaScript/interacao_carrinho.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"></script>
