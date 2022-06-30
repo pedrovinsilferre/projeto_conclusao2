@@ -55,7 +55,6 @@ async function login() {
 function verificarLogin() {
     const usuarioLogado = localStorage.getItem("todos_usuarios");
     if (usuarioLogado) {
-        alert("Você já está logado seu burro!")
       window.location.href = "carrinho.html";
       garagem();
     } else {
