@@ -51,23 +51,26 @@ async function login() {
   }
 }
 
-
 function verificarLogin() {
-    const usuarioLogado = localStorage.getItem("todos_usuarios");
-    if (usuarioLogado) {
-      window.location.href = "carrinho.html";
-      garagem();
-    } else {
-      window.location.href = "login.html";
-    }
+  const usuarioLogado = localStorage.getItem("todos_usuarios");
+  if (usuarioLogado) {
+    window.location.href = "carrinho.html";
+  } else {
+    window.location.href = "login.html";
+  }
 }
 document.addEventListener("keypress", function (e) {
-    if (e.key === 'Enter') {
-        verificarLogin();
-    }
-})
+  if (e.key === "Enter") {
+    verificarLogin();
+  }
+});
 
-function trocar_login(){
-  window.location.href = "login.html"
+function trocar_login() {
+  window.location.href = "login.html";
 }
+
+const algo = todos_usuarios.find((produtos) =>{
+  return produtos.carrinho > 1;
+})
+console.log(find)
 

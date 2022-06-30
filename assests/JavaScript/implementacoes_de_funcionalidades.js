@@ -6,37 +6,6 @@ function go_shop() {
   window.location.href = "carrinho.html";
 }
 
-// function verificar_login (){}
-
-
-
-function buscarFavoritos() {
-  let favoritos = JSON.parse(localStorage.getItem(`favoritos_${1}`));
-
-  if (!favoritos) {
-      favoritos = {
-          usuario: 1,
-          produtos: [
-          ]
-      }
-  }
-
-  return favoritos;
-}
-
-function addFavoritos(id) {
-  let favoritos = buscarFavoritos();
-
-  const produto = produtos.find((produto) => {
-      return produto.id === id;
-  });
-
-  favoritos.produtos.push(produto);
-
-  localStorage.setItem(`favoritos_${1}`, JSON.stringify(favoritos));
-}
-
-addFavoritos(1);
 
 
 
