@@ -67,7 +67,7 @@ document.addEventListener("keypress", function (e) {
     }
 })
 
-function remover_login(){
+function trocar_login(){
   window.location.href = "login.html"
 }
 
