@@ -1,6 +1,3 @@
-lista_shop = [];
-lista_fav = [];
-
 //referente ao direcionamento as páginas de favoritos, carrinho e login
 function go_favorite() {
   window.location.href = "favoritos.html";
@@ -8,15 +5,92 @@ function go_favorite() {
 function go_shop() {
   window.location.href = "carrinho.html";
 }
-function logar() {
-  window.location.href = "login.html";
+
+// function verificar_login (){}
+
+
+function buscarFavoritos() {
+  let favoritos = JSON.parse(localStorage.getItem(`favoritos_${1}`));
+
+  if (!favoritos) {
+      favoritos = {
+          usuario: 1,
+          produtos: [
+          ]
+      }
+  }
+
+  return favoritos;
 }
 
-//add a aba de favoritos
-function add_fav(){
+function addFavoritos(id) {
+  let favoritos = buscarFavoritos();
 
+  const produto = produtos.find((produto) => {
+      return produto.id === id;
+  });
+
+  favoritos.produtos.push(produto);
+
+  localStorage.setItem(`favoritos_${1}`, JSON.stringify(favoritos));
 }
-console.log(lista_fav)
-//add a aba de carrinho
 
-//função de excluir
+addFavoritos(1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mostrar_carrinho = () => {
+  document.localStorege.setItem(arquivo_produtos.codeID);
+};
+
+let links = document.querySelector(".btn");
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function () {
+    let key = this.getAttribute("key");
+    arquivo_produtos[key].quantidade++;
+    mostrar_carrinho();
+  });
+}
+  function addFavoritos(codeID){
+
+  }
+
