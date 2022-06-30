@@ -9,6 +9,7 @@ function go_shop() {
 // function verificar_login (){}
 
 
+
 function buscarFavoritos() {
   let favoritos = JSON.parse(localStorage.getItem(`favoritos_${1}`));
 

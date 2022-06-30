@@ -51,6 +51,7 @@ async function login() {
   }
 }
 
+
 function verificarLogin() {
     const usuarioLogado = localStorage.getItem("todos_usuarios");
     if (usuarioLogado) {
