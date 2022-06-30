@@ -1,4 +1,4 @@
-var todos_usuarios = JSON.parse(localStorage.getItem("allLogins"));
+var todos_usuarios = JSON.parse(localStorage.getItem("todos_usuarios"));
 
 if (todos_usuarios == null) {
   todos_usuarios = [];
@@ -57,6 +57,7 @@ function verificarLogin() {
     if (usuarioLogado) {
         alert("Você já está logado seu burro!")
       window.location.href = "carrinho.html";
+      garagem();
     } else {
       window.location.href = "login.html";
     }
@@ -66,3 +67,5 @@ document.addEventListener("keypress", function (e) {
         verificarLogin();
     }
 })
+
+
