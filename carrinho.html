@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assests/css/styleCarrinho.css"/>
-    <link rel="stylesheet" href="assests/css/stylePadrao.css"/>
-    <title>Carrinho</title>
-  </head>
+  <link rel="stylesheet" href="assests/css/styleCarrinho.css" />
+  <link rel="stylesheet" href="assests/css/stylePadrao.css" />
+  <title>Carrinho</title>
+</head>
 
   <body>
     <header>
@@ -34,80 +34,47 @@
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <div> 
-        <template class="modelo carrinho">
-        </template>
-
-          <table class="table container text-light flex-wrap">
-            <thhead class="table">
-              <tr>
-                <th scope="col" class="col-md-4">Produto</th>
-                <th scope="col" class="">Quantidade</th>
-                <th scope="col" class="">Preço</th>
-                <th scope="col" class="">Subtotal</th>
-                <th scope="col" class=""></th>
-                <th scope="col" class=""></th>
-                <th scope="col" class=""></th>
-              </tr>
-            </thhead>
-            <tbody  class="flex-wrap">
-              <tr class="">
-                <td id="tableContent1" class="gap align-items-center">
-                  <img class="" src="assests/imagens/camiseta-the-boys-frente.webp" alt="imagem do produto" width="50px"> <p class="d-inline">Descrição Do Produto Aqui</p> 
-                </td>
-                <td>
-                  <span class="number-wrapper">
-                    <input class="" type="number" name="qntProdutos" id="qntProdutos">
-                  </span>
-                </td>
-                <td class="">R$ 0,00</td>
-                <td>R$ 0,00</td>
-                <td class="">
-                  <img class="linksParaFav" href="#" src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px">
-                </td>
-                <td id="tabelaIcons" class="">
-                  <img class="linkParaLixeira" src="assests/imagens/lixeira-aberta.png" alt="lixeira aberta" width="30px">
-                </td>
-                <td><input class="btn border text-light" type="button" value="Subtotal" name="calcSubtotal" id="calcSubtotal"></td>
-              </tr>
-            </tbody>
-
-          </table>
-        </div>
-    </main>
-
-    <footer class="footer bg-opacity-25 bg-dark">
-      <div id="footerPrimDiv" class="container p-4 pb-0">
-        <section id="footerPrimSec" class="mb-4 d-flex justify-content-center">
-          <a class="btn-floating m-1" href="#" role="button">   
-            <img src="assests/imagens/facebook.png" alt="logo facebook" width="40px">
-          </a>
-          <a class="btn-floating m-1" href="#" role="button">   
-            <img src="assests/imagens/twitter.png" alt="logo twitter" width="40px">
-          </a>
-          <a class="btn-floating m-1" href="#" role="button">   
-            <img src="assests/imagens/github.png" alt="logo github" width="40px">
-          </a>
-          <a class="btn-floating m-1" href="#" role="button">   
-            <img src="assests/imagens/linkedin.png" alt="logo linkedin" width="40px">
-          </a>
-        </section>
       </div>
+    </nav>
+  </header>
 
-      <div id="footerSegDiv" class="text-center p-3 text-light">
-        ©2022 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-    </footer>
+  <main>
+    <div id="garagem_compras">
+      
+  
+    </div>
+  </main>
 
-    <script src="assests/JavaScript/interacao_carrinho.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+  <footer class="footer bg-opacity-25 bg-dark">
+    <div id="footerPrimDiv" class="container p-4 pb-0">
+      <section id="footerPrimSec" class="mb-4 d-flex justify-content-center">
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/facebook.png" alt="logo facebook" width="40px">
+        </a>
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/twitter.png" alt="logo twitter" width="40px">
+        </a>
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/github.png" alt="logo github" width="40px">
+        </a>
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/linkedin.png" alt="logo linkedin" width="40px">
+        </a>
+      </section>
+    </div>
 
-  </body>
-  </html>
+    <div id="footerSegDiv" class="text-center p-3 text-light">
+      ©2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+
+  <script src="assests/JavaScript/implementacoes_de_funcionalidades.js"></script>
+  <script src="assests/JavaScript/hotweels.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
