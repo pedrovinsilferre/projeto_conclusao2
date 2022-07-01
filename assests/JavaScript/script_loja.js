@@ -76,12 +76,6 @@ function vai_pra_garagem() {
 let id = localStorage.getItem("login_logado");
 let todos_usuarios = JSON.parse(localStorage.getItem("todos_usuarios"));
 for(let i =0; todos_usuarios[i].login_email != id; i++);
-
-console.log()
-
-
-// todos_usuarios[todos_usuarios.findIndex(id)].carrinho.push("algo aqui");
-
 }
 
 
