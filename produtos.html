@@ -1,469 +1,556 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="assests/css/styleProduto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assests/css/stylePadrao.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&family=Rajdhani:wght@500&family=Secular+One&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
-    <title>Produtos</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="assests/css/styleProduto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assests/css/stylePadrao.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&family=Rajdhani:wght@500&family=Secular+One&family=Yanone+Kaffeesatz:wght@600&display=swap"
+    rel="stylesheet">
+  <title>Produtos</title>
+</head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-opacity-25 sticky-top">
-        <div class="container-fluid">
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-opacity-25 sticky-top">
+      <div class="container-fluid">
 
-          <a onclick="trocar_login()" id="burlando_o_sistema" href="#">Sair</a>
 
-          <a class="navbar-brand fs-3 ms-5" href="#">10Nerd</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNavAltMarkup">
-            <div class="navbar-nav gap-5">
-              <a class="nav-link text-light inNav-hover fs-5" href="#">Produtos</a>
-              <!-- <a onclick="go_favorite()" class="nav-link text-light inNav-hover" href="#"> <img src="assests/imagens/heart.png" width="25px" alt="favoritos"></a> -->
-              <a onclick="go_shop()" class="nav-link text-light inNav-hover" href="#"> <img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"></a>
-              <a onclick="verificarLogin()" class="nav-link text-light inNav-hover" href="login.html"> <img src="assests/imagens/user.png" width="25px" alt="icone user"> </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <main>
-      <nav id="inNavID" class="navbar navbar-expand container-fluid m-0 p-0 bg-white">
-        <div class="d-flex container-fluid">
-          <div class="collapse navbar-collapse fs-5" id="navbarNavAltMarkup">
-            <div class="navbar-nav gap-lg-5 d-flex flex-wrap container-fluid justify-content-center text-wrap">
-              <a class="nav-link textNavProduct inNavProduct-hover" href="#pVestuario">Vestuário</a>
-              <a class="nav-link textNavProduct inNavProduct-hover" href="#pAlmofadas">Almofadas</a>
-              <a class="nav-link textNavProduct inNavProduct-hover" href="#pCanecas">Canecas</a>
-              <a class="nav-link textNavProduct inNavProduct-hover" href="#pQuadros">Quadros</a>
-              <a class="nav-link textNavProduct inNavProduct-hover" href="#pLivros">Livros</a>
-              <a class="nav-link textNavProduct inNavProduct-hover" href="#pColecionaveis">Colecionáveis</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="assests/imagens/Banner moletom.jpg" class="d-block w-100" alt="Banner moletons">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="assests/imagens/banner-descontos.webp" class="d-block w-100" alt="Banner descontos">
-          </div>
-          <div class="carousel-item">
-            <img src="assests/imagens/banner camisetas.jpg" class="d-block w-100" alt="Banner camisetas">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+        <a class="navbar-brand fs-3 ms-5" href="#">10Nerd</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-      </div>
-
-      <div class="scrollspy-example container bg-white my-4" data-bs-spy="scroll" data-bs-target="inNavID" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">     
-        <section class="">
-          <h4 id="pVestuario" class="fs-3 text-uppercase p-3">Vestuário</h4>
-
-            <div class="row mb-5">
-
-              <div class="col-md-3">
-                <div id="produtos" class="card">
-                  <img class="card-img-top" src="assests/imagens/moletom-marvel-frente.webp" alt="Moletom Marvel">
-                  <div class="card-body">
-                    <h5 class="card-title">Moletom Unissex Hoddie Marvel Vermelho</h5>
-                    <p class="card-text text-justify">Estampa dedicada aos fãs da Marvel, prezamos por qualidade, diversidade e conforto.</p>
-                    <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                    <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                    <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                    <!-- <a href="#" id="fav_product" class="btn" onclick="add_fav()"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div id="produtos" class="card">
-                  <img class="card-img-top" src="assests/imagens/moletom-batman-frente.webp" alt="Moletom batman">
-                  <div class="card-body">
-                    <h5 class="card-title">Blusa Moletom Unissex Batman</h5>
-                    <p class="card-text">Estampa dedicada aos fãs do Batman. Prezamos por qualidade, diversidade e conforto.</p>
-                    <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                    <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                    <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                    <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div id="produtos" class="card">
-                  <img class="card-img-top" src="assests/imagens/camiseta-the-boys-frente.webp" alt="Camiseta The Boys">
-                  <div class="card-body">
-                    <h5 class="card-title">Camiseta Dupla Face The Boys Diabolical</h5>
-                    <p class="card-text">Estampa dedicada aos fãs the The Boys. Prezamos por qualidade, diversidade e conforto.</p>
-                    <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                    <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                    <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"  onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                    <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div id="produtos" class="card">
-                  <img class="card-img-top" src="assests/imagens/camiseta-stranger-things-frente.webp" alt="Camiseta Stranger Things">
-                  <div class="card-body">
-                    <h5 class="card-title">Camiseta Dupla Face Stranger Things</h5>
-                    <p class="card-text">Estampa dedicada aos fãs the Stranger Things. Prezamos por qualidade, diversidade e conforto.</p>
-                    <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                    <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                    <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"  onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                    <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                  </div>
-                </div>
-              </div>
-           </div>
-        </section>
-
-        <section class="text-right">
-          <h4 id="pAlmofadas">Almofadas</h4>
-          <div class="row mb-5">
-
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/almofada-kakashi.webp" alt="Almofada Kakashi">
-                <div class="card-body">
-                  <h5 class="card-title">Almofada Kakashi</h5>
-                  <p class="card-text text-justify">Estampa dedicada aos fãs de Naruto. prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()" ><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos_card" class="card">
-                <img class="card-img-top" src="assests/imagens/almofada-waifu-rosa.jpg" alt="Almofada waifu">
-                <div class="card-body">
-                  <h5 class="card-title">Almofada Waifu</h5>
-                  <p class="card-text">Estampa dedicada aos fãs de waifus. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" ><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/almofadas-bts.webp" alt="Almofada BTS">
-                <div class="card-body">
-                  <h5 class="card-title">Almofada BTS</h5>
-                  <p class="card-text">Estampa dedicada aos fãs de BTS. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/almofada-jesus.jpg" alt="Almofada Jesus">
-                <div class="card-body">
-                  <h5 class="card-title">Almofada Jesus Cristo</h5>
-                  <p class="card-text">Estampa dedicada aos fãs de Jesus. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
+        <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNavAltMarkup">
+          <div class="navbar-nav gap-5">
+            <a class="nav-link text-light inNav-hover fs-5" href="#">Produtos</a>
+            <!-- <a onclick="go_favorite()" class="nav-link text-light inNav-hover" href="#"> <img src="assests/imagens/heart.png" width="25px" alt="favoritos"></a> -->
+            <a onclick="go_shop()" class="nav-link text-light inNav-hover" href="#"> <img
+                src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"></a>
+            <a onclick="verificarLogin()" class="nav-link text-light inNav-hover" href="login.html"> <img
+                src="assests/imagens/user.png" width="25px" alt="icone user"> </a>
           </div>
-        </section>
-        
-        <section>
-          <h4 id="pCanecas" class="fs-3 text-uppercase p-3">Canecas</h4>
-          <div class="row mb-5">
-
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/caneca-super-vo.jpg" alt="Caneca super vó">
-                <div class="card-body">
-                  <h5 class="card-title">Caneca Super-Vó</h5>
-                  <p class="card-text text-justify">Estampa dedicada aos fãs das vós. prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/caneca-homem de ferro.webp" alt="Caneca homem de ferro">
-                <div class="card-body">
-                  <h5 class="card-title">Caneca Homem de Ferro</h5>
-                  <p class="card-text">Estampa dedicada aos fãs de heróis. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/caneca-homem-aranha.webp" alt="Caneca homem aranha">
-                <div class="card-body">
-                  <h5 class="card-title">Caneca Homem Aranha</h5>
-                  <p class="card-text">Estampa dedicada aos fãs de heróis. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/caneca-naruto.jpg" alt="Caneca Naruto">
-                <div class="card-body">
-                  <h5 class="card-title">Caneca naruto</h5>
-                  <p class="card-text">Estampa dedicada aos fãs de Naruto. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section> 
-          <h4 id="pQuadros" class="fs-3 text-uppercase p-3">Quadros</h4>
-          <div class="row mb-5">
-
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/quadro-ricky-and-morty.jpg" alt="Quadro Ricky And Morty">
-                <div class="card-body">
-                  <h5 class="card-title">Quadro Ricky and Morty</h5>
-                  <p class="card-text">Produto dedicado aos fãs de Ricky and Morty. prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/quadro-star-wars.png" alt="Quadro Star Wars">
-                <div class="card-body">
-                  <h5 class="card-title">Quadro Star Wars</h5>
-                  <p class="card-text">Produto dedicado aos fãs de Star Wars. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/quadro-super-mario.webp" alt="Quadro Super Mário">
-                <div class="card-body">
-                  <h5 class="card-title">Quadro Super Mário</h5>
-                  <p class="card-text">Produto dedicado aos fãs de games. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/quadro-the-flash.png" alt="Quadro the flash">
-                <div class="card-body">
-                  <h5 class="card-title">Quadro The Flash</h5>
-                  <p class="card-text">Produto dedicado aos fãs de herói. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>  
-        
-        <section>
-          <h4 id="pLivros" class="fs-3 text-uppercase p-3">Livros</h4>
-          <div class="row mb-5">
-
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/livros-got.jpg" alt="Livro Game of Thrones">
-                <div class="card-body">
-                  <h5 class="card-title">Livro Game of thrones</h5>
-                  <p class="card-text text-justify">Produto dedicado aos fãs de Game of Thrones. prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/livros-nome-do-vento.jpg" alt="Livro O Nome do Vento">
-                <div class="card-body">
-                  <h5 class="card-title">Livro O Nome do Vento</h5>
-                  <p class="card-text">Produto dedicado aos fãs de fantasia. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/livros-temor-do-sabio.jpg" alt="Livro O Temor do Sábio">
-                <div class="card-body">
-                  <h5 class="card-title">Livro O Temor do Sábio</h5>
-                  <p class="card-text">Produto dedicado aos fãs de fantasia. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/livro-got.jpg" alt="Livro A Furia dos Reis">
-                <div class="card-body">
-                  <h5 class="card-title">Livro A Furia dos Reis</h5>
-                  <p class="card-text">Produto dedicado aos fãs de Game of Thrones. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="pb-2">
-          <h4 id="pColecionaveis" class="fs-3 text-uppercase p-3">Colecionáveis</h4>
-          <div class="row mb-5">
-
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/colecionaveis-boneco-jesus.jpg" height="250px" alt="Colecionáveis Jesus">
-                <div class="card-body">
-                  <h5 class="card-title">Jesus Cristo</h5>
-                  <p class="card-text text-justify">Produto dedicado aos fãs de Jesus. prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 2022d.C</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top img-responsive" src="assests/imagens/colecionaveis-baphomet.webp" height="250px" alt="Baphomet">
-                <div class="card-body">
-                  <h5 class="card-title">Baphomet</h5>
-                  <p class="card-text">Produto dedicado aos fãs de Baphomet. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 1 alma</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/colecionaveis-sao-jorge.webp" height="250px" alt="São Jorge">
-                <div class="card-body">
-                  <h5 class="card-title">São Jorge</h5>
-                  <p class="card-text">Produto dedicado aos fãs de São Jorge. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div id="produtos" class="card">
-                <img class="card-img-top" src="assests/imagens/colecionaveis-homem-de-ferro.webp" height="250px" alt="Homem de ferro">
-                <div class="card-body">
-                  <h5 class="card-title">Homem de Ferro</h5>
-                  <p class="card-text">Produto dedicado aos fãs de heróis. Prezamos por qualidade, diversidade e conforto.</p>
-                  <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
-                  <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
-                  <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras"> Adicionar</a>
-                  <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <footer class="footer bg-opacity-25 bg-dark">
-        <div id="footerPrimDiv" class="container p-4 pb-0">
-          <section id="footerPrimSec" class="mb-4 d-flex justify-content-center">
-            <a class="btn-floating m-1" href="#" role="button">   
-              <img src="assests/imagens/facebook.png" alt="logo facebook" width="40px">
-            </a>
-            <a class="btn-floating m-1" href="#" role="button">   
-              <img src="assests/imagens/twitter.png" alt="logo twitter" width="40px">
-            </a>
-            <a class="btn-floating m-1" href="#" role="button">   
-              <img src="assests/imagens/github.png" alt="logo github" width="40px">
-            </a>
-            <a class="btn-floating m-1" href="#" role="button">   
-              <img src="assests/imagens/linkedin.png" alt="logo linkedin" width="40px">
-            </a>
-          </section>
         </div>
-  
-        <div id="footerSegDiv" class="text-center p-3 text-light">
-          ©2022 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <nav id="inNavID" class="navbar navbar-expand container-fluid m-0 p-0 bg-white">
+      <div class="d-flex container-fluid">
+        <div class="collapse navbar-collapse fs-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav gap-lg-5 d-flex flex-wrap container-fluid justify-content-center text-wrap">
+            <a class="nav-link textNavProduct inNavProduct-hover" href="#pVestuario">Vestuário</a>
+            <a class="nav-link textNavProduct inNavProduct-hover" href="#pAlmofadas">Almofadas</a>
+            <a class="nav-link textNavProduct inNavProduct-hover" href="#pCanecas">Canecas</a>
+            <a class="nav-link textNavProduct inNavProduct-hover" href="#pQuadros">Quadros</a>
+            <a class="nav-link textNavProduct inNavProduct-hover" href="#pLivros">Livros</a>
+            <a class="nav-link textNavProduct inNavProduct-hover" href="#pColecionaveis">Colecionáveis</a>
+          </div>
         </div>
-    </footer>
-    
-    <script src="assests/JavaScript/script_loja.js"></script>
-    <script src="assests/JavaScript/implementacoes_de_funcionalidades.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+      </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assests/imagens/Banner moletom.jpg" class="d-block w-100" alt="Banner moletons">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assests/imagens/banner-descontos.webp" class="d-block w-100" alt="Banner descontos">
+        </div>
+        <div class="carousel-item">
+          <img src="assests/imagens/banner camisetas.jpg" class="d-block w-100" alt="Banner camisetas">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <div class="scrollspy-example container bg-white my-4" data-bs-spy="scroll" data-bs-target="inNavID"
+      data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+      <section class="">
+        <h4 id="pVestuario" class="fs-3 text-uppercase p-3">Vestuário</h4>
+
+        <div class="row mb-5">
+
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/moletom-marvel-frente.webp" alt="Moletom Marvel">
+              <div class="card-body">
+                <h5 class="card-title">Moletom Unissex Hoddie Marvel Vermelho</h5>
+                <p class="card-text text-justify">Estampa dedicada aos fãs da Marvel, prezamos por qualidade,
+                  diversidade e conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" id="fav_product" class="btn" onclick="add_fav()"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/moletom-batman-frente.webp" alt="Moletom batman">
+              <div class="card-body">
+                <h5 class="card-title">Blusa Moletom Unissex Batman</h5>
+                <p class="card-text">Estampa dedicada aos fãs do Batman. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/camiseta-the-boys-frente.webp" alt="Camiseta The Boys">
+              <div class="card-body">
+                <h5 class="card-title">Camiseta Dupla Face The Boys Diabolical</h5>
+                <p class="card-text">Estampa dedicada aos fãs the The Boys. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/camiseta-stranger-things-frente.webp"
+                alt="Camiseta Stranger Things">
+              <div class="card-body">
+                <h5 class="card-title">Camiseta Dupla Face Stranger Things</h5>
+                <p class="card-text">Estampa dedicada aos fãs the Stranger Things. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-right">
+        <h4 id="pAlmofadas">Almofadas</h4>
+        <div class="row mb-5">
+
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/almofada-kakashi.webp" alt="Almofada Kakashi">
+              <div class="card-body">
+                <h5 class="card-title">Almofada Kakashi</h5>
+                <p class="card-text text-justify">Estampa dedicada aos fãs de Naruto. prezamos por qualidade,
+                  diversidade e conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos_card" class="card">
+              <img class="card-img-top" src="assests/imagens/almofada-waifu-rosa.jpg" alt="Almofada waifu">
+              <div class="card-body">
+                <h5 class="card-title">Almofada Waifu</h5>
+                <p class="card-text">Estampa dedicada aos fãs de waifus. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/almofadas-bts.webp" alt="Almofada BTS">
+              <div class="card-body">
+                <h5 class="card-title">Almofada BTS</h5>
+                <p class="card-text">Estampa dedicada aos fãs de BTS. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/almofada-jesus.jpg" alt="Almofada Jesus">
+              <div class="card-body">
+                <h5 class="card-title">Almofada Jesus Cristo</h5>
+                <p class="card-text">Estampa dedicada aos fãs de Jesus. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4 id="pCanecas" class="fs-3 text-uppercase p-3">Canecas</h4>
+        <div class="row mb-5">
+
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/caneca-super-vo.jpg" alt="Caneca super vó">
+              <div class="card-body">
+                <h5 class="card-title">Caneca Super-Vó</h5>
+                <p class="card-text text-justify">Estampa dedicada aos fãs das vós. prezamos por qualidade, diversidade
+                  e conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/caneca-homem de ferro.webp" alt="Caneca homem de ferro">
+              <div class="card-body">
+                <h5 class="card-title">Caneca Homem de Ferro</h5>
+                <p class="card-text">Estampa dedicada aos fãs de heróis. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/caneca-homem-aranha.webp" alt="Caneca homem aranha">
+              <div class="card-body">
+                <h5 class="card-title">Caneca Homem Aranha</h5>
+                <p class="card-text">Estampa dedicada aos fãs de heróis. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/caneca-naruto.jpg" alt="Caneca Naruto">
+              <div class="card-body">
+                <h5 class="card-title">Caneca naruto</h5>
+                <p class="card-text">Estampa dedicada aos fãs de Naruto. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4 id="pQuadros" class="fs-3 text-uppercase p-3">Quadros</h4>
+        <div class="row mb-5">
+
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/quadro-ricky-and-morty.jpg" alt="Quadro Ricky And Morty">
+              <div class="card-body">
+                <h5 class="card-title">Quadro Ricky and Morty</h5>
+                <p class="card-text">Produto dedicado aos fãs de Ricky and Morty. prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/quadro-star-wars.png" alt="Quadro Star Wars">
+              <div class="card-body">
+                <h5 class="card-title">Quadro Star Wars</h5>
+                <p class="card-text">Produto dedicado aos fãs de Star Wars. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/quadro-super-mario.webp" alt="Quadro Super Mário">
+              <div class="card-body">
+                <h5 class="card-title">Quadro Super Mário</h5>
+                <p class="card-text">Produto dedicado aos fãs de games. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/quadro-the-flash.png" alt="Quadro the flash">
+              <div class="card-body">
+                <h5 class="card-title">Quadro The Flash</h5>
+                <p class="card-text">Produto dedicado aos fãs de herói. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4 id="pLivros" class="fs-3 text-uppercase p-3">Livros</h4>
+        <div class="row mb-5">
+
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/livros-got.jpg" alt="Livro Game of Thrones">
+              <div class="card-body">
+                <h5 class="card-title">Livro Game of thrones</h5>
+                <p class="card-text text-justify">Produto dedicado aos fãs de Game of Thrones. prezamos por qualidade,
+                  diversidade e conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/livros-nome-do-vento.jpg" alt="Livro O Nome do Vento">
+              <div class="card-body">
+                <h5 class="card-title">Livro O Nome do Vento</h5>
+                <p class="card-text">Produto dedicado aos fãs de fantasia. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 79,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/livros-temor-do-sabio.jpg" alt="Livro O Temor do Sábio">
+              <div class="card-body">
+                <h5 class="card-title">Livro O Temor do Sábio</h5>
+                <p class="card-text">Produto dedicado aos fãs de fantasia. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/livro-got.jpg" alt="Livro A Furia dos Reis">
+              <div class="card-body">
+                <h5 class="card-title">Livro A Furia dos Reis</h5>
+                <p class="card-text">Produto dedicado aos fãs de Game of Thrones. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-2">
+        <h4 id="pColecionaveis" class="fs-3 text-uppercase p-3">Colecionáveis</h4>
+        <div class="row mb-5">
+
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/colecionaveis-boneco-jesus.jpg" height="250px"
+                alt="Colecionáveis Jesus">
+              <div class="card-body">
+                <h5 class="card-title">Jesus Cristo</h5>
+                <p class="card-text text-justify">Produto dedicado aos fãs de Jesus. prezamos por qualidade, diversidade
+                  e conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 2022d.C</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top img-responsive" src="assests/imagens/colecionaveis-baphomet.webp" height="250px"
+                alt="Baphomet">
+              <div class="card-body">
+                <h5 class="card-title">Baphomet</h5>
+                <p class="card-text">Produto dedicado aos fãs de Baphomet. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 99,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 1 alma</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/colecionaveis-sao-jorge.webp" height="250px"
+                alt="São Jorge">
+              <div class="card-body">
+                <h5 class="card-title">São Jorge</h5>
+                <p class="card-text">Produto dedicado aos fãs de São Jorge. Prezamos por qualidade, diversidade e
+                  conforto.</p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="produtos" class="card">
+              <img class="card-img-top" src="assests/imagens/colecionaveis-homem-de-ferro.webp" height="250px"
+                alt="Homem de ferro">
+              <div class="card-body">
+                <h5 class="card-title">Homem de Ferro</h5>
+                <p class="card-text">Produto dedicado aos fãs de heróis. Prezamos por qualidade, diversidade e conforto.
+                </p>
+                <p class="card-text text-decoration-line-through fs-6 d-inline">De: R$ 79,90</p>
+                <p class="card-text fw-semibold text-decoration-underline d-inline fs-5">Por: 59,90</p>
+                <a href="#" class="btn btnAddCarrinho" onclick="verificarLogin()"><img
+                    src="assests/imagens/carrinho-de-compras (1).png" width="25px" alt="carrinho de compras">
+                  Adicionar</a>
+                <!-- <a href="#" class="btn"> <img src="assests/imagens/coracao.png" alt="Adicionar aos favoritos" width="30px"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer bg-opacity-25 bg-dark">
+    <div id="footerPrimDiv" class="container p-4 pb-0">
+      <section id="footerPrimSec" class="mb-4 d-flex justify-content-center">
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/facebook.png" alt="logo facebook" width="40px">
+        </a>
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/twitter.png" alt="logo twitter" width="40px">
+        </a>
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/github.png" alt="logo github" width="40px">
+        </a>
+        <a class="btn-floating m-1" href="#" role="button">
+          <img src="assests/imagens/linkedin.png" alt="logo linkedin" width="40px">
+        </a>
+      </section>
+    </div>
+
+    <div id="footerSegDiv" class="text-center p-3 text-light">
+      ©2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+
+  <script src="assests/JavaScript/script_loja.js"></script>
+  <script src="assests/JavaScript/implementacoes_de_funcionalidades.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
