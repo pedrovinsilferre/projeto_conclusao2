@@ -5,3 +5,6 @@ function go_favorite() {
 function go_shop() {
   window.location.href = "carrinho.html";
 }
+function go_produtos(){
+  window.location.href = "index.html";
+}
