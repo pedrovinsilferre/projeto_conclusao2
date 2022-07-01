@@ -5,62 +5,6 @@ function go_favorite() {
 function go_shop() {
   window.location.href = "carrinho.html";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-mostrar_carrinho = () => {
-  document.localStorege.setItem(arquivo_produtos.codeID);
-};
-
-let links = document.querySelector(".btn");
-
-for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function () {
-    let key = this.getAttribute("key");
-    arquivo_produtos[key].quantidade++;
-    mostrar_carrinho();
-  });
+function go_produtos(){
+  window.location.href = "index.html";
 }
-  function addFavoritos(codeID){
-
-  }
-
